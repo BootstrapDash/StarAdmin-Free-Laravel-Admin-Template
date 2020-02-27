@@ -1,0 +1,41 @@
+{
+  "_args": [
+    [
+      "owl-carousel-2@0.0.3",
+      "/Users/jyothish/Documents/star-laravel-free/template"
+    ]
+  ],
+  "_from": "owl-carousel-2@0.0.3",
+  "_id": "owl-carousel-2@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-SLFpIMZnadzkS2Ws86DhccIIHyk=",
+  "_location": "/owl-carousel-2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "owl-carousel-2@0.0.3",
+    "name": "owl-carousel-2",
+    "escapedName": "owl-carousel-2",
+    "rawSpec": "0.0.3",
+    "saveSpec": null,
+    "fetchSpec": "0.0.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/owl-carousel-2/-/owl-carousel-2-0.0.3.tgz",
+  "_spec": "0.0.3",
+  "_where": "/Users/jyothish/Documents/star-laravel-free/template",
+  "author": {
+    "name": "Cristian Urbano",
+    "email": "soycristianurbano@gmail.com"
+  },
+  "description": "Owl Carousel 2 package",
+  "keywords": [
+    "owlcarousel"
+  ],
+  "license": "MIT",
+  "name": "owl-carousel-2",
+  "version": "0.0.3"
+}

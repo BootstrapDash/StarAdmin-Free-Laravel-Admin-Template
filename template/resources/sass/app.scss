@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+@import "variables";
+@import "~compass-mixins/lib/compass";
+@import "~compass-mixins/lib/animate";
+@import "~bootstrap/scss/bootstrap";
+@import "fonts";
+@import "functions";
+
+/* === Template mixins === */
+@import "mixins/animation";
+@import "mixins/buttons";
+@import "mixins/misc";
+@import "mixins/color-functions";
+@import "mixins/cards";
+@import "mixins/blockqoute";
+
+/* === Core Styles === */
+@import "background";
+@import "typography";
+@import "reset";
+@import "misc";
+@import "utilities";
+@import "demo";
+@import "dashboard";
+
+/* === Components === */
+
+@import "components/checkbox-radio";
+@import "components/icons";
+@import "components/tables";
+@import "components/buttons";
+@import "components/breadcrumbs";
+@import "components/cards";
+
+@import "components/bootstrap-progress";
+
+@import "components/dropdowns";
+@import "components/loaders/loaders";
+@import "components/todo-list";
+@import "components/spinner";
+
+@import "components/landing-screens/auth";
+
+/* === Plugin Overrides === */
+@import "components/plugin-overrides/_chartjs";
+/* === Layout === */
+@import "navbar";
+@import "sidebar";
+@import "footer";
+@import "layout";
+@import "settings-panel";

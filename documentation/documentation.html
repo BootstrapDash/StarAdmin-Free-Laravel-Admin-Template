@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/theme/dracula.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-fluid documentation">
+      <div class="row">
+        <div class="col-md-3 col-xl-2 left-sidebar">
+          <div class="logo-wrapper">
+            <img src="logo.svg" alt="logo" />
+          </div>
+          <h5 class="left-menu-title">Documentation</h5>
+          <ul class="left-menu">
+            <li><a href="#introduction"> Introduction </a></li>
+            <li><a href="#fileStructure"> File Structure </a></li>
+          </ul>
+          <h6 class="left-menu-title">Installation</h6>
+          <ul class="left-menu">
+            <li><a href="#setupEnvironment"> Setup Environment </a></li>
+            <li><a href="#templateInstallation"> Installation Steps </a></li>
+          </ul>
+          <h6 class="left-menu-title">Basic Structure</h6>
+          <ul class="left-menu">
+            <li><a href="#layout"> Layout </a></li>
+            <li><a href="#navbar"> Header </a></li>
+            <li><a href="#leftSidebar"> Sidebar </a></li>
+            <li><a href="#footer"> Footer </a></li>
+          </ul>
+          <h6 class="left-menu-title">Other Information</h6>
+          <ul class="left-menu">
+            <li><a href="#customerSupport"> Customer Support </a></li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-xl-10 main-panel bg-white">
+          <div class="main-panel-wrapper">
+            <h2
+              class="mt-2 text-center font-weight-light text-muted text-uppercase mb-4"
+            >
+              Documentation
+            </h2>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3 id="introduction" class="mb-4">Introduction</h3>
+                <p>
+                  Star Admin Free Laravel is a Laravel 6 template that is based
+                  on the CSS framework Bootstrap 4 and it is built with Sass.
+                  Sass compiler makes it easier to code and customize. If you
+                  are unfamiliar with Bootstrap or Sass, visit their website and
+                  read through the documentation. All of Bootstrap components
+                  have been modified to fit the style of Star Admin Pro Laravel
+                  and provide a consistent look throughout the template.
+                </p>
+                <p>
+                  Before you start working with the template, we suggest you go
+                  through the pages that are bundled with the theme. Most of the
+                  template example pages contain quick tips on how to create or
+                  use a component which can be really helpful when you need to
+                  create something on the fly.
+                </p>
+              </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3 id="fileStructure" class="mb-4">File Structure</h3>
+                <p>
+                  Once you have download the package you will see the following
+                  folder structure inside the folder.
+                </p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+Star Admin Pro Laravel/
+  ├── template
+    ├── app/
+    ├── bootstrap/
+    ├── config/
+    ├── database/
+    ├── public/
+    ├── resources/
+        ├── js/
+        ├── lang/
+        ├── sass/
+        ├── views/
+            ├── layout/
+            ├── pages/
+            ├── dashboard.blade.php
+    ├── routes/
+    ├── storage/
+    ├── tests/
+    ├── public/
+    ├── .env.example
+    ├── .gitatributes
+    ├── .gitignore
+    ├── .styleci.yml
+    ├── artisan
+    ├── composer.json
+    ├── composer.lock
+    ├── package.lock.json
+    ├── package.json
+    ├── phpunit.xml
+    ├── readme.md
+    ├── server.php
+    ├── webpack.mix.js
+  ├── CHANGELOG.md
+  ├── documentation
+                </textarea>
+              </div>
+            </div>
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3>Installation</h3>
+                <h4 id="setupEnvironment" class="pt-4">
+                  Set up the Development Environment
+                </h4>
+                <p>
+                  The Laravel framework has a few system requirements. Of
+                  course, all of these requirements are satisfied by the
+                  <a
+                    href="https://laravel.com/docs/6.x/homestead"
+                    target="_blank"
+                    >Laravel Homestead</a
+                  >
+                  virtual machine, so it's highly recommended that you use
+                  Homestead as your local Laravel development environment.
+                </p>
+                <br />
+                <p>
+                  However, if you are not using Homestead, you will need to make
+                  sure your server meets the following requirements:
+                </p>
+                <ul>
+                  <li>PHP &gt;= 7.2.0</li>
+                  <li>OpenSSL PHP Extension</li>
+                  <li>PDO PHP Extension</li>
+                  <li>Mbstring PHP Extension</li>
+                  <li>Tokenizer PHP Extension</li>
+                  <li>XML PHP Extension</li>
+                  <li>Ctype PHP Extension</li>
+                  <li>JSON PHP Extension</li>
+                  <li>BCMath PHP Extension</li>
+                </ul>
+
+                <h4 id="templateInstallation" class="pt-4">
+                  Installation Steps
+                </h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+composer install</textarea
+                >
+                <textarea rows="4" cols="50" class="code-non-editable">
+npm install</textarea
+                >
+                <p>Now Need Rename the .env.example to .env</p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+php artisan key:generate</textarea
+                >
+
+                <br />
+                <br />
+
+                <h5 class="font-weight-bold">Now Need some Laravel Commands</h5>
+                <p>For Serve project:</p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+php artisan serve</textarea
+                >
+
+                <br />
+
+                <p>
+                  For watch files and compiles assets on the fly (also auto
+                  reloads browser):
+                </p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+npm run watch</textarea
+                >
+
+                <br />
+
+                <p>For compile assets:</p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+npm run dev</textarea
+                >
+
+                <br />
+
+                <p>For compile and prepare assets for production:</p>
+                <textarea rows="4" cols="50" class="code-non-editable">
+npm run prod</textarea
+                >
+
+                <br />
+                <br />
+
+                <div>
+                  You need to know how laravel works in order to use this
+                  version. Check the Laravel
+                  <a href="https://laravel.com/docs/6.x"
+                    >official documentation</a
+                  >.
+                </div>
+              </div>
+            </div>
+
+            <div class="card grid-margin">
+              <div class="card-body">
+                <h3>Basic Structure</h3>
+                <h4 class="pt-4" id="layout">master.blade.php</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Star Admin Pro Laravel Dashboard Template</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- CSRF Token -->
+  <meta name="_token" content="{{ csrf_token() }}">
+  
+  <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
+
+  <!-- plugin css -->
+  {!! Html::style('assets/plugins/@mdi/font/css/materialdesignicons.min.css') !!}
+  {!! Html::style('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') !!}
+  <!-- end plugin css -->
+
+  @stack('plugin-styles')
+
+  <!-- common css -->
+  {!! Html::style('css/app.css') !!}
+  <!-- end common css -->
+
+  @stack('style')
+</head>
+<body data-base-url="{{url('/')}}">
+
+  {!! Html::script('/assets/js/preloader.js') !!}
+
+  <div class="container-scroller" id="app">
+    @include('layout.header')
+    <div class="container-fluid page-body-wrapper">
+      @include('layout.sidebar')
+      <div class="main-panel">
+        <div class="content-wrapper">
+          @yield('content')
+        </div>
+        @include('layout.footer')
+      </div>
+    </div>
+  </div>
+
+  <!-- base js -->
+  {!! Html::script('js/app.js') !!}
+  {!! Html::script('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') !!}
+  <!-- end base js -->
+
+  <!-- plugin js -->
+  @stack('plugin-scripts')
+  <!-- end plugin js -->
+
+  <!-- common js -->
+  {!! Html::script('assets/js/off-canvas.js') !!}
+  {!! Html::script('assets/js/hoverable-collapse.js') !!}
+  {!! Html::script('assets/js/misc.js') !!}
+  {!! Html::script('assets/js/settings.js') !!}
+  {!! Html::script('assets/js/todolist.js') !!}
+  <!-- end common js -->
+
+  @stack('custom-scripts')
+</body>
+</html>
+
+                </textarea>
+                <h4 class="pt-4" id="navbar">header.blade.php</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+    <a class="navbar-brand brand-logo" href="{{ url('/') }}">
+      <img src="{{ url('assets/images/logo.svg') }}" alt="logo" /> </a>
+    <a class="navbar-brand brand-logo-mini" href="{{ url('/') }}">
+      <img src="{{ url('assets/images/logo-mini.svg') }}" alt="logo" /> </a>
+  </div>
+  <div class="navbar-menu-wrapper d-flex align-items-center">
+    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+      <span class="mdi mdi-menu"></span>
+    </button>
+    <ul class="navbar-nav navbar-nav-left header-links">
+      <li class="nav-item d-none d-md-flex">
+        <a href="#" class="nav-link">Schedule <span class="badge badge-primary ml-1">New</span>
+        </a>
+      </li>
+      <li class="nav-item active d-none d-md-flex">
+        <a href="#" class="nav-link">
+          <i class="mdi mdi-elevation-rise"></i>Reports</a>
+      </li>
+      <li class="nav-item d-none d-md-flex">
+        <a href="#" class="nav-link">
+          <i class="mdi mdi-bookmark-plus-outline"></i>Score</a>
+      </li>
+      <li class="nav-item dropdown d-md-none">
+        <a class="nav-link dropdown-toggle px-0" id="quickDropdown" href="#" data-toggle="dropdown" aria-expanded="false"> Quick Links </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown pt-3" aria-labelledby="quickDropdown">
+          <a href="#" class="dropdown-item">Schedule <span class="badge badge-primary ml-1">New</span></a>
+          <a href="#" class="dropdown-item"><i class="mdi mdi-elevation-rise"></i>Reports</a>
+          <a href="#" class="dropdown-item"><i class="mdi mdi-bookmark-plus-outline"></i>Score</a>
+        </div>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-nav-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+          <i class="mdi mdi-file-outline"></i>
+          <span class="count">7</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
+          <a class="dropdown-item py-3">
+            <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+            <span class="badge badge-pill badge-primary float-right">View all</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <img src="{{ url('assets/images/faces/face10.jpg') }}" alt="image" class="img-sm profile-pic"> </div>
+            <div class="preview-item-content flex-grow py-2">
+              <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+              <p class="font-weight-light small-text"> The meeting is cancelled </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <img src="{{ url('assets/images/faces/face12.jpg') }}" alt="image" class="img-sm profile-pic"> </div>
+            <div class="preview-item-content flex-grow py-2">
+              <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+              <p class="font-weight-light small-text"> The meeting is cancelled </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+              <img src="{{ url('assets/images/faces/face3.jpg') }}" alt="image" class="img-sm profile-pic"> </div>
+            <div class="preview-item-content flex-grow py-2">
+              <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+              <p class="font-weight-light small-text"> The meeting is cancelled </p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+          <i class="mdi mdi-bell-outline"></i>
+          <span class="count bg-success">4</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
+          <a class="dropdown-item py-3 border-bottom">
+            <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+            <span class="badge badge-pill badge-primary float-right">View all</span>
+          </a>
+          <a class="dropdown-item preview-item py-3">
+            <div class="preview-thumbnail">
+              <i class="mdi mdi-alert m-auto text-primary"></i>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+              <p class="font-weight-light small-text mb-0"> Just now </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item py-3">
+            <div class="preview-thumbnail">
+              <i class="mdi mdi-settings m-auto text-primary"></i>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+              <p class="font-weight-light small-text mb-0"> Private message </p>
+            </div>
+          </a>
+          <a class="dropdown-item preview-item py-3">
+            <div class="preview-thumbnail">
+              <i class="mdi mdi-airballoon m-auto text-primary"></i>
+            </div>
+            <div class="preview-item-content">
+              <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+              <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item d-none d-lg-block" id="color-setting">
+        <a class="nav-link" href="#">
+          <i class="mdi mdi-tune"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown d-none d-xl-inline-block">
+        <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+          <span class="profile-text">Richard V.Welsh !</span>
+          <img class="img-xs rounded-circle" src="{{ url('assets/images/faces/face8.jpg') }}" alt="Profile image"> </a>
+        <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+          <a class="dropdown-item p-0">
+            <div class="d-flex border-bottom">
+              <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+              </div>
+              <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+              </div>
+              <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+              </div>
+            </div>
+          </a>
+          <a class="dropdown-item mt-2"> Manage Accounts </a>
+          <a class="dropdown-item"> Change Password </a>
+          <a class="dropdown-item"> Check Inbox </a>
+          <a class="dropdown-item"> Sign Out </a>
+        </div>
+      </li>
+    </ul>
+    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+      <span class="icon-menu"></span>
+    </button>
+  </div>
+</nav>
+                  
+                </textarea>
+                <h4 class="pt-4" id="leftSidebar">sidebar.blade.php</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<nav class="sidebar sidebar-offcanvas dynamic-active-class-disabled" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile not-navigation-link">
+      <div class="nav-link">
+        <div class="user-wrapper">
+          <div class="profile-image">
+            <img src="{{ url('assets/images/faces/face8.jpg') }}" alt="profile image">
+          </div>
+          <div class="text-wrapper">
+            <p class="profile-name">Richard V.Welsh</p>
+            <div class="dropdown" data-display="static">
+              <a href="#" class="nav-link d-flex user-switch-dropdown-toggler" id="UsersettingsDropdown" href="#"
+                data-toggle="dropdown" aria-expanded="false">
+                <small class="designation text-muted">Manager</small>
+                <span class="status-indicator online"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="UsersettingsDropdown">
+                <a class="dropdown-item p-0">
+                  <div class="d-flex border-bottom">
+                    <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                      <i class="mdi mdi-bookmark-plus-outline mr-0 text-gray"></i>
+                    </div>
+                    <div class="py-3 px-4 d-flex align-items-center justify-content-center border-left border-right">
+                      <i class="mdi mdi-account-outline mr-0 text-gray"></i>
+                    </div>
+                    <div class="py-3 px-4 d-flex align-items-center justify-content-center">
+                      <i class="mdi mdi-alarm-check mr-0 text-gray"></i>
+                    </div>
+                  </div>
+                </a>
+                <a class="dropdown-item mt-2"> Manage Accounts </a>
+                <a class="dropdown-item"> Change Password </a>
+                <a class="dropdown-item"> Check Inbox </a>
+                <a class="dropdown-item"> Sign Out </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success btn-block">New Project <i class="mdi mdi-plus"></i>
+        </button>
+      </div>
+    </li>
+    <li class="nav-item {{ active_class(['/']) }}">
+      <a class="nav-link" href="{{ url('/') }}">
+        <i class="menu-icon mdi mdi-television"></i>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item {{ active_class(['basic-ui/*']) }}">
+      <a class="nav-link" data-toggle="collapse" href="#basic-ui" aria-expanded="{{ is_active_route(['basic-ui/*']) }}"
+        aria-controls="basic-ui">
+        <i class="menu-icon mdi mdi-dna"></i>
+        <span class="menu-title">Basic UI Elements</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse {{ show_class(['basic-ui/*']) }}" id="basic-ui">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item {{ active_class(['basic-ui/buttons']) }}">
+            <a class="nav-link" href="{{ url('/basic-ui/buttons') }}">Buttons</a>
+          </li>
+          <li class="nav-item {{ active_class(['basic-ui/dropdowns']) }}">
+            <a class="nav-link" href="{{ url('/basic-ui/dropdowns') }}">Dropdowns</a>
+          </li>
+          <li class="nav-item {{ active_class(['basic-ui/typography']) }}">
+            <a class="nav-link" href="{{ url('/basic-ui/typography') }}">Typography</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="nav-item {{ active_class(['charts/chartjs']) }}">
+      <a class="nav-link" href="{{ url('/charts/chartjs') }}">
+        <i class="menu-icon mdi mdi-chart-line"></i>
+        <span class="menu-title">Charts</span>
+      </a>
+    </li>
+    <li class="nav-item {{ active_class(['tables/basic-table']) }}">
+      <a class="nav-link" href="{{ url('/tables/basic-table') }}">
+        <i class="menu-icon mdi mdi-table-large"></i>
+        <span class="menu-title">Tables</span>
+      </a>
+    </li>
+    <li class="nav-item {{ active_class(['icons/material']) }}">
+      <a class="nav-link" href="{{ url('/icons/material') }}">
+        <i class="menu-icon mdi-emoticon-happy-outline"></i>
+        <span class="menu-title">Icons</span>
+      </a>
+    </li>
+    <li class="nav-item {{ active_class(['user-pages/*']) }}">
+      <a class="nav-link" data-toggle="collapse" href="#user-pages"
+        aria-expanded="{{ is_active_route(['user-pages/*']) }}" aria-controls="user-pages">
+        <i class="menu-icon mdi mdi-lock-outline"></i>
+        <span class="menu-title">User Pages</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse {{ show_class(['user-pages/*']) }}" id="user-pages">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item {{ active_class(['user-pages/login']) }}">
+            <a class="nav-link" href="{{ url('/user-pages/login') }}">Login</a>
+          </li>
+          <li class="nav-item {{ active_class(['user-pages/register']) }}">
+            <a class="nav-link" href="{{ url('/user-pages/register') }}">Register</a>
+          </li>
+          <li class="nav-item {{ active_class(['user-pages/lock-screen']) }}">
+            <a class="nav-link" href="{{ url('/user-pages/lock-screen') }}">Lock Screen</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.bootstrapdash.com/demo/star-laravel-free/documentation/documentation.html"
+        target="_blank">
+        <i class="menu-icon mdi mdi-file-outline"></i>
+        <span class="menu-title">Documentation</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+                </textarea>
+                <h4 class="pt-4" id="footer">footer.blade.php</h4>
+                <textarea rows="4" cols="50" class="code-non-editable">
+
+<footer class="footer">
+  <div class="container-fluid clearfix">
+    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2019 <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i>
+    </span>
+  </div>
+</footer>
+                </textarea>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 id="customerSupport" class="mb-4">Customer Support</h3>
+                <p>
+                  We will assist you any problem you encounter while buidling
+                  your dashboard via Star Admin Pro Laravel.
+                </p>
+                <p>
+                  Email:
+                  <a href="mailto:support@bootstrapdash.com"
+                    >support@bootstrapdash.com</a
+                  >
+                </p>
+                <p>We will respond to you as quickly as we can. Thank you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/mode/python/python.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+#chartjs-tooltip {
+  background: lighten($card-bg, 4%);
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: $box-shadow;
+  transition: 0.3s ease;
+
+  table {
+    tr {
+      th {
+        color: $text-muted;
+      }
+
+      td {
+        display: flex;
+        align-items: center;
+        line-height: 1px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        &:first-letter {
+          text-transform: uppercase;
+        }
+
+        span {
+          width: 7px;
+          height: 7px;
+          display: inline-block;
+          border-radius: 100px;
+          margin-right: 7px;
+          color: $body-color;
+        }
+      }
+    }
+  }
+}

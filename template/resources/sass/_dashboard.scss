@@ -1,0 +1,89 @@
+.card-revenue {
+    background: linear-gradient(120deg, #556cdc, #128bfc, #18bef1);
+    background-size: cover;
+    color: color(white);
+
+    .highlight-text {
+        font-size: 1.875rem;
+        font-family: $type-1;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+
+    .badge {
+        background-color: rgba(color(white), 0.2);
+        font-size: 1.125rem;
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+.card-revenue-table {
+    .revenue-item {
+        border-bottom: 1px solid $border-color;
+        @extend .py-3;
+
+        &:last-child {
+            border-bottom: 0;
+            @extend .pb-0;
+        }
+
+        &:first-child {
+            @extend .pt-0;
+        }
+
+        .revenue-desc {
+            margin-right: auto;
+            width: 80%;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+        .revenue-amount {
+            margin-left: auto;
+            width: 40%;
+
+            p {
+                font-size: 1.25rem;
+                font-family: $type-1;
+                font-weight: 600;
+                text-align: right;
+
+                .rtl & {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.chartjs-legend {
+    margin-top: 0px;
+    margin-right: 0px;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            color: $body-text-color;
+            margin-left: 1rem;
+            @media (max-width: 992px) {
+                margin-left: 0;
+                margin-right: 1rem;
+            }
+
+            span {
+                height: 10px;
+                width: 10px;
+                border-radius: 100%;
+                margin-right: 10px;
+                display: inline-block;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}
